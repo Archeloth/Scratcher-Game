@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <h1>Scratcher</h1>
+    <h5 id="money">Your money: 100</h5>
+    <div class="card" id="card">
+        <canvas id="overlay" width="400" height="200" onmousedown="deleting=true" onmouseup="deleting=false"></canvas>
+        <div class="card-body">
+            <span id="lucky">1</span>
+            <span id="lucky">2</span>
+            <span id="lucky">3</span>
+            <span id="lucky">4</span>
+        </div>
+    </div>
+    <button id="next">Next card</button>
+    <script src="script.js"></script>
+</body>
+</html>
